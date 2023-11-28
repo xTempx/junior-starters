@@ -23,11 +23,6 @@
     "react-router-dom": "^6.20.0",
     "react-scripts": "^5.0.1"
   },
-  "overrides": {
-    "react-scripts": {
-      "typescript": "^5"
-    }
-  },
   "devDependencies": {
     "@types/node": "^20.8.0",
     "@types/react": "^18.2.15",
