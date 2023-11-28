@@ -1,6 +1,6 @@
 import useMediaQuery from '@/hooks/useMediaQuery';
 import { SelectedPage } from '@/shared/types';
-import HomePageDoodle from '@/assets/BG_vid.png';
+import HomePageDoodle from '@/assets/BG_Vid.png';
 import LineSec from '@/assets/Line.png';
 import HomePageGraphic from '@/assets/Junior Starters 1080.mp4';
 import ActionButton from '@/shared/ActionButton';
