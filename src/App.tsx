@@ -1,12 +1,17 @@
 import Navbar from "@/scenes/navbar";
 import Home from "@/scenes/home";
-import AboutUs from "@/scenes/aboutus";
+import AboutUs from "@/scenes/WhyUs";
 import OurPrograms from "@/scenes/ourprograms";
+import Testimonial from "@/scenes/Testimonial/Testimonial";
 import OurCurriculum from "@/scenes/ourcurriculum";
+import Footer from "@/scenes/Footer";
+import News from "@/scenes/news";
 import SvgLoader from  "@/shared/Loaders";
 import { useEffect, useState } from "react";
 import { SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
+import CTASection from "@/components/CTASection";
+
 
 function App() {
   const [loading , setLoading] = useState(false);  
@@ -33,7 +38,7 @@ function App() {
     return() => window.removeEventListener("scroll", handleScroll);
     },[]); 
   return (
-      <div className="app bg-gray-20">
+      <div className="app bg-white ">
         {
           loading ?
           
@@ -50,7 +55,10 @@ function App() {
             <Home setSelectedPage={setSelectedPage} />
             <AboutUs setSelectedPage={setSelectedPage} />
             <OurCurriculum setSelectedPage={setSelectedPage} />
-            <OurPrograms setSelectedPage={setSelectedPage} />
+            {/*<OurPrograms setSelectedPage={setSelectedPage} />*/}
+            <News setSelectedPage={setSelectedPage}  />
+            <CTASection />
+            <Footer setSelectedPage={setSelectedPage}/>
             </>
       }
      </div>
